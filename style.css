@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+
+}
+
+ :root {
+  --bg-color: rgb(20, 45, 78);
+  --second-bg-color: #ffffff;
+  --third-bg-color:#0c1b2e;
+  --fourth-bg-color:#f6f6f8;
+  --text-color: #fff;
+  --second-text-color: #6ebbfb;
+  --second-color:#e8eaec;
+  --main-color: rgb(199, 10, 127);
+  --big-font: 5rem;
+  --h2-font: 1.5rem;
+  --h3-font: 1.1rem;
+ }
+
+body {
+  background-color: var(--third-bg-color);
+  color: var(--text-color);
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 22px 8%;
+  border-bottom: 1px solid transparent;
+  transition: all .45s ease;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 1px ;
+}
+
+span{
+  color: var(--second-text-color);
+}
+
+.navigationList{
+  display: flex;
+}
+
+.navigationList li{
+  text-transform: uppercase;
+}
+
+.navigationList a{
+  color: var(--second-color);
+  font-size: 13px;
+  font-weight: light;
+  margin: 0 20px;
+  transition: all.45s ease;
+}
+
+.navigationList a:hover{
+  color: var(--second-text-color);
+}
+
+
+.navigationList a.AHome{
+  color: var(--second-text-color);
+}
+section{
+  padding: 160px 15% 120px;
+}
+
+.homeText{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(20,45,78,0.7), rgba(20,45,78,0.7)),url(Background2.gif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.slide{
+  margin-bottom: 20px;
+}
+.bonjour1{
+  color: var(--third-bg-color);
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 5px;
+  background: var(--second-bg-color);
+}
+.homeText h1{
+  font-size: 50px;
+  font-weight: bolder;
+  color: var(--text-color);
+  list-style: 1.1;
+  margin: 0 0 8px;
+}
+.homeText p{
+  color: var(--second-color);
+  font-size:17px;
+  line-height: 1.8;
+  margin-bottom: 40px ;
+}
+
+header.sticky{
+  background: var(--bg-color);
+  border-bottom: 1px solid #0c1b2e;
+  padding: 12px 15%;
+}
+
+.About{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8rem;
+}
+.AboutMeImage img{
+  max-width: 530px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+   }
+
+.aboutMe{
+    font-size: var(--h2-font); 
+    font-weight: bolder; 
+    color: var(--third-bg-color);
+    background: var(--second-bg-color);
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 10px;
+    line-height: 32px;
+    border-radius: 5px; 
+    display: inline-block;
+}
+.AboutMeText p{
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.mySkills{
+  background: var(--third-bg-color);
+}
+.skill{
+  text-align: center;
+  }
+  .skill ul{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  section .skill ul li{
+    padding: 5px 10px;
+    color: var(--third-bg-color);
+    background-color: var(--second-color);
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .skill li .listsactive{
+    background: #0c1b2e;
+    color: #142d4e;
+
+  }
+.skill p{
+  color: var(--second-color);
+  font-weight: lighter;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.skill h2{
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+.skillContent{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+.box{
+  background: var(--bg-color);
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all .45s ease-in;
+}
+.icon{
+  font-size: 25px;
+  margin-bottom: 20px;
+  }
+
+.box h3{
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+.box p{
+  color: var(--second-color);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.box:hover{
+  transform: translateY(-9px);
+  cursor: pointer;
+}
+.contactMe{
+  background: var(--third-bg-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+.ContactMeTxt h3{
+color: var(--text-color);
+margin: 18px 0;
+font-size: 20px;
+font-weight: lighter;
+}
+.ContactMeTxt h2{
+  font-size: 40px;
+  line-height: 1;
+}
+.contactMeList{
+  margin-bottom: 1.2rem;
+}
+.contactMeList li{
+  margin-bottom: 12px;
+}
+.contactMeList li a{
+  display: block;
+  color: var(--second-color);
+  font-size: 14px;
+  transition: all .45s ease;
+}
+.contactMeList li a:hover{
+color: var(--second-text-color);
+transform: translate(5px);
+}
+.ContactMeIcons{
+  height: 45px;
+  width: 45px;
+  background: var(--main-color);
+}
+.ContactForm form{
+  position: relative;
+}
+.ContactForm form input, form textarea{
+  width: 100%;
+  padding: 14px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.ContactForm textarea{
+  resize: none;
+  height: 240px;
+}
+.ContactForm .submit{
+  display: inline-block;
+  transition: all .45s ease;
+}
+.ContactForm .submit:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+.itemBox img{
+  border-radius: 8px;
+  display: block;
+}
+.projectsSection{
+ width: 85%;
+ margin: 50px auto;
+}
+
+.projectsSection ul{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+.projectsSection ul li{
+  background-color: var(--bg-color);
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 6px;
+}
+.projectsSection ul li.active{
+  color: #142d4e;
+  background-color:var(--second-bg-color);
+}
+
+
